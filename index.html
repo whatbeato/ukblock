@@ -11,8 +11,24 @@
 </head>
 <body>
     <div class="top-bar">
-        <h1>uk.headpats.you</h1>
+        <h1>ukblock</h1>
+        <div class="top-bar-right">
+            <select id="language-selector" aria-label="Select language" onchange="changeLanguage(this.value)">
+                <option value="en" selected>English</option>
+                <option value="pt">Português</option>
+                <option value="es">Español</option>
+            </select>
+        </div>
     </div>
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'en') {
+                window.location.href = '/index.html';
+            } else {
+                window.location.href = '/' + lang + '/index.html';
+            }
+        }
+    </script>
     <div class="main-content">
         <h1>sorry, this website is blocked in your country due to Ofcom regulations</h1>
         <h2>the uk goverment has set strict content regulations with the intention to try and protect children online, but with the side efect of suppressing free speech and creativity.</h2>

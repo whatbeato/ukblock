@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>desculpa, este site está bloqueado no teu país</title>
+</head>
+<body>
+    <div class="top-bar">
+        <h1>ukblock</h1>
+        <div class="top-bar-right">
+            <select id="language-selector" aria-label="Selecionar idioma" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="pt" selected>Português</option>
+                <option value="es">Español</option>
+            </select>
+        </div>
+    </div>
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'en') {
+                window.location.href = '/index.html';
+            } else {
+                window.location.href = '/' + lang + '/index.html';
+            }
+        }
+    </script>
+    <div class="main-content">
+        <h1>desculpa, este site está bloqueado no teu país devido aos regulamentos da Ofcom</h1>
+        <h2>o governo do Reino Unido estabeleceu regulamentações rigorosas de conteúdo com a intenção de tentar proteger crianças online, mas com o efeito de suprimir a nossa (sim, eu e tu) liberdade de expressão e criatividade.</h2>
+        <p>Recomendo que leias <a href="https://www.eff.org/deeplinks/2025/08/no-uks-online-safety-act-doesnt-make-children-safer-online">o artigo da EFF</a> sobre esta nova regra.</p>
+        <p>O Kiwi Farms e o 4chan também contestaram esta regra em tribunal. vê o <a href="https://kiwifarms.st/threads/4chan-and-kiwi-farms-sue-the-uk-over-its-age-verification-law.227364/">artigo do kiwifarms</a> sobre isso. o Reino Unido também tentou <a href="https://www.theregister.com/2025/10/13/4chan_ofcom_fine/">multar o 4chan 20,000 GBP</a> (vinte mil libras esterlinas).</p>
+        <p><strong>isto não está a afetar apenas esses fóruns.</strong> no Reddit, esta lei também está a afetar o acesso de menores de 18 anos a <strong>jornalismo, reportagem de conflitos, saúde pública</strong> (tipo r/periods, r/stopsmoking, r/sexualassault) <strong>e aqueles que procuram recursos LGBTQIA+ em relação a identidade e apoio.</strong> até o r/rickroll está bloqueado! <strong>lê o artigo da EFF <a href="https://www.eff.org/deeplinks/2025/08/americans-be-warned-lessons-reddits-chaotic-uk-age-verification-rollout">aqui.</a></strong></p>
+        <h3>isto deve ser um sinal de alerta para todos, mesmo aqueles fora do Reino Unido.</h3>
+        <p>a UE está atualmente a planear aplicar leis semelhantes a esta. muitos estados dos EUA atualmente têm leis que exigem verificação de identidade para aceder a recursos como estes.</p>
+        <p>comparado à Lei de Segurança Online do Reino Unido, levou 12 (doze) anos à UE para propor isto.</p>
+        <h2>recursos</h2>
+        <p>recomendo que dês uma olhadela ao <a href="https://www.eff.org/issues/age-verification">centro de recursos da EFF sobre verificação de idade e controlo de acesso por idade.</a></p>
+        <p>se quiseres aceder a este site, recomendo o <a href="https://mulvad.net/">Mullvad</a>, embora eu pessoalmente não os use, já ouvi coisas muito boas sobre eles.</p>
+    </div>
+    <div id="footer">
+        <p>fontes: EFF e a página ukblock do <a href="https://3kh0.net">3kh0</a>.</p>
+        <p>privacidade é um direito, não um privilégio.</p>
+        <p>este site é <a href="https://github.com/whatbeato/ukblock">código aberto.</a> contribuições são aceites e apreciadas :)</p>
+    </div>
+</body>
+</html>
